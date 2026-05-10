@@ -118,7 +118,7 @@ const RegisterPage = () => {
             <div className="flex-1 h-px bg-slate-200"></div>
           </div>
 
-          <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); window.location.href='/checkout'; }}>
+          <form className="space-y-5" onSubmit={(e) => { e.preventDefault(); window.location.href='/dashboard'; }}>
             <div>
               <label className="block text-sm font-semibold text-slate-700 mb-1.5">Nama Lengkap</label>
               <input type="text" placeholder="John Doe" className="w-full px-4 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" required />
@@ -173,7 +173,7 @@ const RegisterPage = () => {
           </form>
 
           <p className="mt-8 text-center text-slate-600 font-medium">
-            Sudah punya akun? <Link to="/checkout" className="text-primary font-bold hover:underline">Masuk di sini</Link>
+            Sudah punya akun? <Link to="/login" className="text-primary font-bold hover:underline">Masuk di sini</Link>
           </p>
         </div>
       </div>
